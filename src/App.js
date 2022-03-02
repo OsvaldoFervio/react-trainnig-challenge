@@ -1,9 +1,21 @@
-import AppWrapper from './AppWrapper';
+import logo from './logo.svg';
+import './App.css';
 
-function App() {
+import React, { Fragment } from 'react';
+import { Header } from './components/Header';
+import { ContentView } from './components/ContentView';
+import { Footer } from './components/Footer';
+
+
+
+export function App() {
   return (
-    <AppWrapper text="Hello world!" type="warning"/>
-  );
+    <Fragment>
+      <Header/>
+      <ContentView/>      
+      <Footer/>    
+    </Fragment>
+  )
 }
 
 export default App;
