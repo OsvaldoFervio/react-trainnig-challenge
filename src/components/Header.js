@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -24,9 +25,19 @@ export function Header(){
             </IconButton>
             <Typography variant="h6" 
               component="div" sx={{ flexGrow: 1 }}>
-               Home
+                <Link  to={"/"} className="btn">
+                  <Button color="inherit">Home</Button>
+               </Link>
+               <Link  to={"/album"} className="btn">
+                  <Button color="inherit">Album</Button>
+               </Link>
+               <Link  to={"/pokemon"} className="btn">
+                  <Button color="inherit">Api</Button>
+               </Link>
             </Typography>
-            <Button color="inherit">Album</Button>
+            <Link  to={"/about"} className="btn">
+              <Button color="inherit">About</Button>
+              </Link>
           </Toolbar>
         </AppBar>
     );

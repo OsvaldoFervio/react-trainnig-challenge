@@ -55,9 +55,26 @@
     transform: rotate(360deg);
   }
 }
-
+.btn{
+  color:white;
+  text-decoration:none;
+}
 ul li{
   display:inline;
      padding-left:3px;
      padding-right:3px;
+}
+
+.col-25{
+  width: 25%;
+  background-color: #ffcb05;
+  display:flex;
+  flex-direction: column;
+  
+}
+.col-75{
+  width: 75%;
+  background-color: #2a75bb;
+  display:flex;
+  flex-direction: column;
 }
